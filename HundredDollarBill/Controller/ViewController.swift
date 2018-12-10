@@ -10,15 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Image: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Image.autoresizingMask = UIView.AutoresizingMask(rawValue: UIView.AutoresizingMask.flexibleBottomMargin.rawValue | UIView.AutoresizingMask.flexibleHeight.rawValue | UIView.AutoresizingMask.flexibleRightMargin.rawValue | UIView.AutoresizingMask.flexibleLeftMargin.rawValue | UIView.AutoresizingMask.flexibleTopMargin.rawValue | UIView.AutoresizingMask.flexibleWidth.rawValue)
-        Image.contentMode = UIView.ContentMode.scaleAspectFit
-        // Do any additional setup after loading the view, typically from a nib.
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        
+        leftSwipe.direction = .left
+        rightSwipe.direction = .right
+        
+        view.addGestureRecognizer(leftSwipe)
+        view.addGestureRecognizer(rightSwipe)
     }
+    
+    @objc func handleSwipes(_ sender:UISwipeGestureRecognizer)
+    {
+        if (sender.direction == .left)
+        {
+            print("Swipe Left")
+            
+            // show the view from the right side
+        }
+        
+        if (sender.direction == .right)
+        {
+            print("Swipe Right")
+            
+            // show the view from the left side
+        }
 
 
+    }
 }
-

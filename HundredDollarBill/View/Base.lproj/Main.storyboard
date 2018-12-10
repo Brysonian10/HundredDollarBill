@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hMF-jz-vtP">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,16 +9,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu-->
+        <scene sceneID="plR-6c-Cks">
+            <objects>
+                <viewController title="Menu" id="hMF-jz-vtP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NnU-99-spC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VirtualMoneys art" translatesAutoresizingMaskIntoConstraints="NO" id="kDv-Re-xZ9">
+                                <rect key="frame" x="79" y="37" width="509" height="248"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQi-m1-6LQ">
+                                <rect key="frame" x="147" y="245" width="373" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="Where's my money?"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="LUD-0T-dy9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kDv-Re-xZ9" firstAttribute="centerX" secondItem="NnU-99-spC" secondAttribute="centerX" id="1p6-By-C28"/>
+                            <constraint firstItem="EQi-m1-6LQ" firstAttribute="leading" secondItem="mkT-a8-VNT" secondAttribute="leading" constant="147" id="CR3-Tx-UvE"/>
+                            <constraint firstItem="mkT-a8-VNT" firstAttribute="bottom" secondItem="kDv-Re-xZ9" secondAttribute="bottom" constant="90" id="FwM-ht-ZiP"/>
+                            <constraint firstItem="kDv-Re-xZ9" firstAttribute="centerX" secondItem="EQi-m1-6LQ" secondAttribute="centerX" id="G9E-mx-860"/>
+                            <constraint firstItem="kDv-Re-xZ9" firstAttribute="leading" secondItem="mkT-a8-VNT" secondAttribute="leading" constant="79" id="PSE-nW-lLy"/>
+                            <constraint firstItem="kDv-Re-xZ9" firstAttribute="top" secondItem="mkT-a8-VNT" secondAttribute="top" constant="37" id="Wy7-ra-GST"/>
+                            <constraint firstItem="mkT-a8-VNT" firstAttribute="bottom" secondItem="EQi-m1-6LQ" secondAttribute="bottom" constant="29" id="das-DC-aRr"/>
+                            <constraint firstItem="EQi-m1-6LQ" firstAttribute="top" secondItem="mkT-a8-VNT" secondAttribute="top" constant="245" id="qXh-i0-R1a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mkT-a8-VNT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHz-oJ-Tb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="129"/>
+        </scene>
+        <!--HundredDollarBill-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HundredDollarBill" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HundredDollarBill" id="BYZ-38-t0r" customClass="ViewController" customModule="HundredDollarBill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hundredDollar" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-3W-hBp">
-                                <rect key="frame" x="0.0" y="17" width="812" height="341"/>
+                                <rect key="frame" x="0.0" y="17" width="667" height="341"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,6 +80,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="VirtualMoneys art" width="530" height="200"/>
         <image name="hundredDollar" width="1200" height="505"/>
     </resources>
 </document>
