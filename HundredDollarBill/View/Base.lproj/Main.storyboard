@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="landscape">
+    <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,34 +14,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HundredDollarBill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hundredDollar" translatesAutoresizingMaskIntoConstraints="NO" id="Cdb-2L-Pm3">
-                                <rect key="frame" x="0.0" y="41" width="667" height="292"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hundredDollar" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-3W-hBp">
+                                <rect key="frame" x="0.0" y="17" width="812" height="341"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Cdb-2L-Pm3" secondAttribute="trailing" id="OuR-bd-TSY"/>
-                            <constraint firstItem="Cdb-2L-Pm3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W77-Qr-51a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cdb-2L-Pm3" secondAttribute="bottom" constant="52" id="Zdh-HQ-NhL"/>
-                            <constraint firstItem="Cdb-2L-Pm3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cCx-Xs-0Lx"/>
+                            <constraint firstItem="iAU-3W-hBp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LT6-e7-wIU"/>
+                            <constraint firstAttribute="trailing" secondItem="iAU-3W-hBp" secondAttribute="trailing" id="SYz-GA-EKu"/>
+                            <constraint firstItem="iAU-3W-hBp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cIj-ZJ-Pld"/>
+                            <constraint firstItem="iAU-3W-hBp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="nQw-fQ-Ktc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="onP-DE-dRi" appends="YES" id="Lyw-wE-SP7"/>
                         </connections>
                     </view>
-                    <connections>
-                        <outlet property="Image" destination="Cdb-2L-Pm3" id="MqV-wl-wL9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="onP-DE-dRi"/>
             </objects>
-            <point key="canvasLocation" x="129.98500749625188" y="130.40000000000001"/>
+            <point key="canvasLocation" x="128.18590704647679" y="128.80000000000001"/>
         </scene>
     </scenes>
     <resources>
