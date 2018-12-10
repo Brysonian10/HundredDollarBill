@@ -38,6 +38,14 @@ class ViewController: UIViewController {
             
             // show the view from the left side
         }
+        
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Bill")
+        
+        self.present(resultViewController, animated:true, completion:nil)
+        
 
 
     }

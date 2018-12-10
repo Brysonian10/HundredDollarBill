@@ -50,7 +50,7 @@
         <!--HundredDollarBill-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="HundredDollarBill" id="BYZ-38-t0r" customClass="ViewController" customModule="HundredDollarBill" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Bill" title="HundredDollarBill" id="BYZ-38-t0r" customClass="ViewController" customModule="HundredDollarBill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
